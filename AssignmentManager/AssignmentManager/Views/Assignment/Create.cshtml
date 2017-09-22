@@ -1,4 +1,4 @@
-﻿@model AssignmentManager.Entities.Assignment
+﻿@model AssignmentManager.Models.AssignmentViewModel
 @{
     ViewBag.Title = "Create";
 }
@@ -7,6 +7,7 @@
 
 @using (Html.BeginForm("Create", "Assignment"))
 {
+    @Html.ValidationSummary()
     <div class="container">
         <div class="form-group row">
             <div class="col-md-3">
